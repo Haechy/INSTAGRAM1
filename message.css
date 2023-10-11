@@ -9,3 +9,268 @@
 .body{
   background-color: var(--black);
 }
+
+.sidebar{
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  border-right: 1px solid var(--grey);
+  z-index: 1000;
+}
+
+.bottom-bar{
+  display: none;
+}
+
+.list{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+ align-items: center; 
+  gap: 0.15rem;
+  padding: 1rem;
+}
+.link {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.link i {
+  margin-right: 10px;
+}
+
+.icon{
+  font-size: 20px;
+}
+
+.fluid-container{
+  align-items: flex-end;
+  float: right;
+  margin-right: 62rem;
+   width: 20vw;
+  height: 200vh;
+  position: relative;
+ 
+  
+  border-right: 1px solid var(--grey);
+   z-index: 1000; 
+}
+
+.main-component .btn{
+  justify-content: center;
+}
+
+.main-component{
+  /* align-items: flex-end;
+  float: right; */
+  position: fixed;
+  top: 50%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.main{
+  margin-left: 100px;
+
+}
+.btn{
+  justify-content: center;
+  background-color: blue;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.back{
+  background-color: red;
+}
+.message{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  color: white;
+}
+
+
+.item{
+  margin-right:-1px;
+  padding-right:20px;
+  padding-top: 25px; 
+  
+}
+
+.push{
+  padding-right: 10px;
+}
+h2{
+  padding-top: 20px;
+  font-size: 10px;
+  color: white;
+}
+
+
+
+.push{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 80px;
+  text-align: right; 
+}
+.picture{
+  height: 7rem;
+  width: 20rem;
+}
+
+.message-items h4{
+  color: #0095f6;
+  font-size: 15px;
+  
+}
+
+.message-items span{
+  color: red;
+  display: flex;
+  margin-left: 5rem;
+}
+
+
+.pic{
+  width: 10rem;
+}
+.content h3{
+  align-items: flex-end;
+}
+
+.text{
+  margin-right: 100rem;
+  padding-right: 10px;
+  margin-top: -60px;
+  color: white;
+  font-size: 15px;
+}
+
+.text1{
+  margin-left: 90rem;
+  margin-top: -60px;
+  color: white;
+  font-size: 20px;
+}
+
+.content{
+  margin-top: 20px;
+}
+
+  .logom {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .button1{
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 10px;
+    
+  }
+
+  .select{
+    display: none;
+  }
+
+@media screen and (max-width: 900px){
+  .fluid-container{
+    align-items: flex-end;
+    float: right;
+    margin-right: 67rem;
+  }
+  
+} 
+
+@media screen and (max-width: 600px){
+  .fluid-container{
+    align-items: flex-end;
+  float: right;
+  margin-right: 80vw;
+  width: 20vw;
+  height: 200vh;
+  scroll-behavior: smooth;
+  position: relative;
+  }
+  
+
+  .select{
+    display: flex;
+    padding-left: 40px;
+  }
+  .header{
+    display: none;
+  }
+  .message{
+    display: none;
+  }
+  
+  .pic{
+    
+    margin-top: 50px;
+    width: 10rem;
+  } 
+
+  .icon2{
+    margin-top: 60px;
+    margin-left: -50px;
+  }
+
+  
+
+  .content{
+    display: none;
+  }
+
+  .sidebar{
+    display: none;
+  }
+  
+.main-component{
+  margin-right: -170px;
+  position: fixed;
+}
+
+  
+.fluid-container h2{
+  margin-left: 10px
+}
+
+.message h5{
+  margin-left: 10px;
+}
+  .text{
+    justify-content: start;
+    margin-left: -4;
+  }
+
+    .bottom-bar{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--grey);
+        height: 38px;
+        padding: 1rem;
+        background-color: var(--black);
+        z-index: 1000
+        }
+}

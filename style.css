@@ -6,6 +6,8 @@
     --light-grey: #a8a8a8;  
   }
   
+
+
   html,
   body {
     scroll-behavior: smooth;
@@ -19,7 +21,7 @@
   }
 
   a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
   }
 
@@ -30,7 +32,7 @@
 
  .leftbar {
    /* background-color:var(--white) ; */
-   width: 200px;
+   width: 280px;
    height: 100vh;
    position: fixed;
    border-right: 1px solid var(--grey);
@@ -70,6 +72,35 @@
 .link i {
     margin-right: 10px;
 }
+.link a{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--white);
+}
+.link a:hover{
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
+.stories-container p{
+  color: white;
+  font-size: 15rem;
+}
+
+.post-component p{
+  color: var(--white);
+  font-size: 14px;
+}
+
+.post-component li{
+  /* display: flex; */
+  font-weight: 500;
+  padding-top: 20px;
+  margin-left: 20px;
+  color: var(--light-grey);
+}
+
+
 .logo2 {
     display: none ;
 }
@@ -78,14 +109,19 @@
     display: none;
 }
 
+
 .main-component {
+    background-color: var(--black);
     width: 80vw ;
     display: block;
-    margin-left: auto;
+     margin-left: auto;
+     /* position: fixed; */
+     left: 0;
+     right: 0;
     min-height: 100vh;
     height: auto;
-    /* overflow-x: hidden; */
-    display: flex ;
+    overflow-x: hidden; 
+     display: flex ; 
     justify-content: space-between;
 }
 
@@ -93,7 +129,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 2rem;
+     padding: 2rem; 
      /* width: auto; */
      /* height: 100vh; */
 
@@ -104,6 +140,27 @@
    .profile-suggestions {
     width: 40%;
 }
+
+.profile-info a{
+  text-decoration: none;
+}
+
+.profile-suggestions  li {
+  font-size: 15px;
+  text-decoration: none;
+  
+}
+
+.profile-list li {
+  display: flex;
+  text-decoration: none;
+}
+.post-component a{
+  text-decoration: none;
+}
+.post-component a:hover{
+  text-decoration: none;
+  color: var(--light-grey);}
 
 @media screen and (max-width: 1200px){
     .profile-suggestions {
@@ -165,17 +222,20 @@
     .bottom-bar {
         position: fixed;
         bottom: 0;
-        width: 90vw;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-top: 1px solid var(--grey);
-        height: 24px;
-        padding: 1rem;
+        height: 40px;
+        padding: 1.5rem;
         background-color: var(--black);
         z-index: 1000;
 
     }
+    /* .bottom-bar img{
+      font-size: large;
+    } */
 /* 
     .stories-container {
         width: 50vw;
